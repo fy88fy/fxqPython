@@ -12,7 +12,10 @@
 
 def main():
     salary = int(input('Please input your salary: '))
+    remain = salary
+    buylist = []
     while True:
+
         print('''
         ---------------------
         ------Sale list------
@@ -27,16 +30,30 @@ def main():
         ''')
         list = [['salary',salary],['Cell Phone',5000],['Book',200],['coffe',20],['Bycle',800],['Laptop',8000],['Pen',10]]
 
-        print("Please input the number of something. ")
-        select = int(input("Plese input number(1/2/3...): "))
-        # if num == 1:
-        cost = int(list[select][1])
-        remain = salary-cost
 
-        print('You Select:',list[select][0])
-        print(list[select])
-        print(cost)
-        print(remain)
+        print("Please input the number of something. ")
+        select = input("Plese input number(1/2/3...,and exit): ")
+        if select == 'q' or select == 'Q' or select == 'exit' or select == 'quit':
+            break
+        elif select == 'list':
+            print(buylist)
+            continue
+        select = int(select)
+        cost = int(list[select][1])
+        remain = remain-cost
+
+        if remain < 0:
+            print("Sorry,you money is not enough.")
+            continue
+
+        buylist.append(list[select][0])
+
+        # print(list[select])
+        # print(cost)
+        # print(remain)
+        print("You buy: ",buylist)
+        print("You cost is :",salary-remain)
+
 
 
 
