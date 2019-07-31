@@ -1,6 +1,6 @@
 """
 @author: Fengxiaoqing
-@contact: fengxiaoqing@360.net
+@contact: fy88fy@163.com
 @software: PyCharm
 @file: var.py
 @time: 2019/7/29 16:37
