@@ -28,7 +28,15 @@ def main():
         ---------------------
         ---------------------    
         ''')
-        list = [['salary',salary],['Cell Phone',5000],['Book',200],['coffe',20],['Bycle',800],['Laptop',8000],['Pen',10]]
+        list = [
+                ['salary',salary],
+                ['Cell Phone',5000],
+                ['Book',200],
+                ['coffe',20],
+                ['Bycle',800],
+                ['Laptop',8000],
+                ['Pen',10]
+                ]
 
         print("Please input the number of something. ")
         select = input("Plese input number(1/2/3...,and exit): ")
@@ -37,6 +45,9 @@ def main():
         elif select == 'list':
             print(buylist)
             continue
+        else:
+            print("ERROR")
+
         select = int(select)
         cost = int(list[select][1])
         remain = remain-cost
@@ -47,8 +58,12 @@ def main():
 
         buylist.append(list[select][0])
 
-        print("You buy: ",buylist)
+        # print(list[select])
+        # print(cost)
+        # print(remain)
+        print("You buy: \033[31m%s\033[0m " % (buylist))
         print("You cost is :",salary-remain)
+
 
 if __name__ == "__main__":
     main()
