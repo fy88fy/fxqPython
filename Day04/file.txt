@@ -1,0 +1,5 @@
+-rw-r--r--. 1 root root 1992567395 Aug  8 11:12 NGSOC_YYS-V4.0_4.7.1.0805.tar.gz
+drwxrwxrwx. 3 1107 1107         16 Jul  8 18:02 postgresql-10.4
+-rw-r--r--. 1 root root   26652442 May  8 00:00 postgresql-10.4.tar.gz
+drwxr-xr-x. 3 root root       4096 Apr 18 11:23 rpm
+-rw-r--r--. 1 root root       9195 Sep  2 18:08 sar.csv
