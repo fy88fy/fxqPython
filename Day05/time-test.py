@@ -31,6 +31,7 @@ import  time
 
 # a = time.asctime() # struct_time ->Tue Sep  3 11:11:19 2019
 a = time.ctime(34234) # 时间戳 -> Thu Jan  1 17:30:34 1970
-
 print(a)
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+
 
