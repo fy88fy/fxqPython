@@ -26,7 +26,7 @@
 
 import socket
 server = socket.socket()
-server.bind(('localhost',6913)) #绑定要监听端口
+server.bind(('localhost',6915)) #绑定要监听端口
 server.listen(5) #监听
 
 print("我要开始等电话了")
